@@ -1,0 +1,25 @@
+.body {
+  display: flex;
+  flex-direction: row;
+}
+.textarea {
+  width: 45%;
+  height: 100vh;
+  padding: 20px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+}
+
+.line-center {
+  height: 100vh;
+  border-left: rgba(108, 117, 125, 0.3);
+}
+
+.markdown {
+  width: 45%;
+  height: 100vh;
+  padding: 20px;
+  font-size: 18px;
+  outline: none;
+}
