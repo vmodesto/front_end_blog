@@ -1,8 +1,8 @@
 import React from 'react';
 import Post from './Post';
-import './Posts.css'
+import '../styles/Posts.css'
 
-const Posts = () => {
+export function Posts() {
   const response = [{
     authorAvatar: "https://image.shutterstock.com/image-photo/pleasant-smiling-young-indian-woman-600w-1906256635.jpg",
     authorName: "Joaquina Silva",
@@ -49,5 +49,3 @@ const Posts = () => {
       </>
    );
 }
-
-export default Posts;

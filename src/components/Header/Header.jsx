@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import './Header.css'
+import './styles/Header.css'
 import Menu from './Menu'
 
 
-const Header = () => {
+export function Header() {
 
   const [menuActive, setMenuActive] = useState(false)
 
@@ -28,5 +28,3 @@ const Header = () => {
   </>
   );
 }
-
-export default Header;

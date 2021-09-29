@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ReactMarkdown from 'react-markdown';
-import './Markdown.css'
+import '../styles/Markdown.css'
 
 
 const Markdown = () => {

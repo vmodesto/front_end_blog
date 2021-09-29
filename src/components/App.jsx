@@ -1,14 +1,19 @@
-import './App.css';
-import Header from './Header';
-import Home from './Home';
+import '../styles/App.css';
+import { GlobalStyle } from '../styles/global';
+import { Login } from './Auth/Login';
+import { Register } from './Auth/Register';
+import { Header } from './Header/Header';
+import { Home } from './Home/Home';
 import Markdown from './Markdown';
 
 function App() {
 
   return (
     <div className="App">
-      <Header/>
-      <Home />
+      {/* <Header />
+      <Home /> */}
+      {/* <Register /> */}
+      <GlobalStyle />
     </div>
   );
 }

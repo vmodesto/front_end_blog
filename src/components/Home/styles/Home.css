@@ -3,6 +3,7 @@
   flex-direction: column;
   text-align: justify;
   align-items: center;
+  justify-content: center;
 }
 
 .container {
