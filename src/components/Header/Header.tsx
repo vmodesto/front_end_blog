@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './styles/Header.css'
+import { ButtonMenu, ButtonMenuContainer, Container, Logo } from './styles/style';
 import Menu from './Menu'
 
 
@@ -16,14 +16,14 @@ export function Header() {
 
   return (
   <>
-    <header className="header">
-      <div className="button-menu-container">
-        <button className="button-menu" onClick={showMenu}></button>
-      </div>
-      <div className="logo">
-        <div>Blog</div>
-      </div>
-    </header>
+    <Container>
+      <ButtonMenuContainer>
+        <ButtonMenu onClick={showMenu}></ButtonMenu>
+      </ButtonMenuContainer>
+      <Logo>
+        Blog
+      </Logo>
+    </Container>
     {menuActive === true  && <Menu/>}
   </>
   );

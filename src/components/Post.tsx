@@ -1,7 +1,15 @@
 import React from 'react';
 import '../styles/Post.css'
 
-const Post = (props) => {
+interface PostProps {
+  authorAvatar: string,
+  authorName: string,
+  postImage: string,
+  postTitle: string,
+  postDescription: string
+}
+
+const Post = (props: PostProps) => {
   return (
     <div className="post">
       <div className="author">

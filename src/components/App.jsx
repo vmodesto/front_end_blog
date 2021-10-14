@@ -1,18 +1,20 @@
+import Routes from '../routes';
+import VLibras from '@djpfs/react-vlibras-typescript';
+
 import '../styles/App.css';
 import { GlobalStyle } from '../styles/global';
-import { Login } from './Auth/Login';
-import { Register } from './Auth/Register';
-import { Header } from './Header/Header';
-import { Home } from './Home/Home';
-import Markdown from './Markdown';
+import { makeServer } from '../services/mirage';
+
+makeServer()
 
 function App() {
 
   return (
     <div className="App">
+      <VLibras />
       {/* <Header />
       <Home /> */}
-      {/* <Register /> */}
+      <Routes />
       <GlobalStyle />
     </div>
   );
