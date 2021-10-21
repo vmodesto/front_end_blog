@@ -1,56 +1,52 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  margin: auto;
-  height: 60%;
-  width: 35rem;
-  position:fixed;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
 
-  form {
-    align-items: center;
+  @media (max-width: 1080px) {
+    font-size: 80%;
+    width: 80%;
+  }
+
+  @media (max-width: 720px) {
+      font-size: 70%;
+      width: 70%;
+  }
+
+  @media (max-width: 360px) {
+      font-size: 60%;
+      width: 60%;
+  }
+
+  div {
+    width: 100%;
+    margin: 1rem;
     display: flex;
     flex-direction: column;
-    
-    input {
-      margin: 0.5rem;
-      outline: none;
-      border-color: rgba(0, 0, 0, 0.4);
-      border-radius: 5px;
-      padding: 0.5rem 5px;
-      width: 100%;
-      height: 3rem;
+
+    button {
+      display: flex;
+      flex-direction: row;
+      width: 20%;
+      align-self: center;
     }
   }
 
+  .title {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
 
-`;
-
-export const TextArea = styled.textarea`
-    width: 100%;
-    height: 30rem;
-    margin: 0.5rem;
-    outline: none;
-    border-color: rgba(0, 0, 0, 0.4);
+  .container-item {
+    width: 50%;
     border-radius: 5px;
-    padding: 0.5rem 5px;
+  }
 
-    @media (max-width: 1080px) {
-        font-size: 80%;
-        width: 16rem;
-    }
-
-    @media (max-width: 720px) {
-        font-size: 70%;
-        width: 14rem;
-    }
-
-    @media (max-width: 360px) {
-        font-size: 60%;
-        width: 12rem;
-    }
-
+  .textarea {
+    resize: none;
+    border-radius: 5px;
+  }
 `;

@@ -16,8 +16,9 @@ export function makeServer({ environmnet = "dvelopment"} = {}) {
         name: "Testando o seeds",
         authorAvatar: "https://cdn.pixabay.com/photo/2016/11/29/13/14/attractive-1869761_960_720.jpg",
         authorName: "Silvia Almeida",
+        postContent: "",
         postDescription: "Uma breve introdução no mundo dos bancos de dados",
-        postTitle: "Testeando o seeds",
+        postTitle: "Testando o seeds",
         postImage: "http://ehgomes.com.br/disciplinas/bdd/imagens/2021db.jpg"
       })
     },
@@ -36,8 +37,8 @@ export function makeServer({ environmnet = "dvelopment"} = {}) {
             name: request_converted.title,
             authorAvatar: "https://cdn.pixabay.com/photo/2016/11/29/13/14/attractive-1869761_960_720.jpg",
             authorName: "Silvia Almeida",
-            postDescription: request_converted.content,
-            postTitle: "Testando o seeds",
+            postDescription: request_converted.description,
+            postTitle: request_converted.title,
             postImage: "http://ehgomes.com.br/disciplinas/bdd/imagens/2021db.jpg"
           },
           
